@@ -1,0 +1,282 @@
+<%- include("header.ejs") %>
+    <div class="above_form">
+        <span>Fill the form below to submit your application</span>
+    </div>
+
+
+    <form class="row g-3 needs-validation" action="/application_form" method="POST" id="application_form" novalidate>
+        <div class="heading_form">
+            <h4>Personal Info</h4>
+        </div>
+
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" name="First_name" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" name="Last_name" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Father Name</label>
+            <input type="text" class="form-control" name="father_name" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Email Address</label>
+            <div class="input-group has-validation">
+                <input type="email" class="form-control" name="email" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Please choose a valid email address.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Phone No.</label>
+            <div class="input-group has-validation">
+                <input type="text" class="form-control" name="phone" id="validationCustomUsername" required>
+                <div class="invalid-feedback">
+                    Please choose a valid contact Number.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <label for="validationCustom03" class="form-label">Address</label>
+            <input type="text" class="form-control" name="address" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid address.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" name="city" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" name="state" id="validationCustom04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>kpk</option>
+        <option>Punjab</option>
+        <option>Sindh</option>
+        <option>Balochistan</option>
+        <option>GB</option>
+        <option>AJK</option>
+      </select>
+            <div class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" name="zip_code" id="validationCustom05" required>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+
+        <div class="heading_form">
+            <h4>Education</h4>
+        </div>
+        <div class="heading_form">
+            <h5>Intermediate</h5>
+        </div>
+        <div class="col-md-2">
+            <label for="validationCustom03" class="form-label" id="num">F.Sc Marks</label>
+            <input type="text" class="form-control" name="FSc_marks" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid Number.
+            </div>
+        </div>
+        <!-- <div id='errornum'>
+            <span></span>
+        </div> -->
+        <div class="col-md-2">
+            <label for="validationCustom03" class="form-label" id="totalnum">Total Marks</label>
+            <input type="text" class="form-control" name="FSc_Total_marks" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid Number.
+            </div>
+        </div>
+        <div class="col-md-8">
+            <label for="validationCustom03" class="form-label">Institute/College</label>
+            <input type="text" class="form-control" name="FSc_college" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a college name.
+            </div>
+        </div>
+
+        <div class="heading_form">
+            <h5>Matric</h5>
+        </div>
+
+        <div class="col-md-2">
+            <label for="validationCustom03" class="form-label" id="num">Matric Marks</label>
+            <input type="text" class="form-control" name="Matric_marks" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid Number.
+            </div>
+        </div>
+        <!-- <div id='errornum'>
+            <span></span>
+        </div> -->
+
+        <div class="col-md-2">
+            <label for="validationCustom03" class="form-label" id="totalnum">Total Marks</label>
+            <input type="text" class="form-control" name="Matric_Total_marks" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid Number.
+            </div>
+        </div>
+        <div class="col-md-8">
+            <label for="validationCustom03" class="form-label">Institute/College</label>
+            <input type="text" class="form-control" name="Matric_college" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a college name.
+            </div>
+        </div>
+
+        <div class="heading_form">
+            <h4>Applying For</h4>
+        </div>
+
+        <div class="heading_form">
+            <h4>Sciences </h4>
+        </div>
+        <div class="col-md-6" id="BS">
+            <label for="validationCustom04" class="form-label">Preferences</label>
+            <select class="form-select" name="BS" id="validationCustom04">
+                <option selected disabled value="">Choose...</option>
+                <option>BS Physics</option>
+                <option>BS Maths</option>
+                <option>BS Chemistry</option>
+                <option>BS History</option>
+                <option>BS IR</option>
+              </select>
+            <select class="form-select" name="BS" id="validationCustom04">
+                <option selected disabled value="">Choose...</option>
+                <option>BS Physics</option>
+                <option>BS Maths</option>
+                <option>BS Chemistry</option>
+                <option>BS History</option>
+                <option>BS IR</option>
+              </select>
+            <select class="form-select" name="BS" id="validationCustom04">
+                <option selected disabled value="">Choose...</option>
+                <option>BS Physics</option>
+                <option>BS Maths</option>
+                <option>BS Chemistry</option>
+                <option>BS History</option>
+                <option>BS IR</option>
+              </select>
+            <select class="form-select" name="BS" id="validationCustom04">
+                <option selected disabled value="">Choose...</option>
+                <option>BS Physics</option>
+                <option>BS Maths</option>
+                <option>BS Chemistry</option>
+                <option>BS History</option>
+                <option>BS IR</option>
+              </select>
+
+        </div>
+
+        <div class="heading_form">
+            <h4>Engineering </h4>
+        </div>
+
+        <div class="col-md-6" id="engg_pref">
+            <label for="validationCustom04" class="form-label">Preferences</label>
+            <select class="form-select" name="engg_pref" id="validationCustom04">
+            <option selected disabled value="">Choose...</option>
+            <option>Electrical Engineering</option>
+            <option>Software Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Information Security</option>
+            <option>Civil Engineering</option>
+          </select>
+            <select class="form-select" name="engg_pref" id="validationCustom04">
+            <option selected disabled value="">Choose...</option>
+            <option>Electrical Engineering</option>
+            <option>Software Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Information Security</option>
+            <option>Civil Engineering</option>
+          </select>
+            <select class="form-select" name="engg_pref" id="validationCustom04">
+            <option selected disabled value="">Choose...</option>
+            <option>Electrical Engineering</option>
+            <option>Software Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Information Security</option>
+            <option>Civil Engineering</option>
+          </select>
+            <select class="form-select" name="engg_pref" id="validationCustom04">
+            <option selected disabled value="">Choose...</option>
+            <option>Electrical Engineering</option>
+            <option>Software Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Information Security</option>
+            <option>Civil Engineering</option>
+          </select>
+
+        </div>
+
+
+
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
+
+
+
+    <%- include("footer.ejs") %>
