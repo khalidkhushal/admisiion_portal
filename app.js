@@ -5,9 +5,9 @@ const router = require("./server/routes/router");
 const ejs = require("ejs");
 const path = require("path");
 const connectdb = require("./server/model/connection");
-// const dotenv = require("dotenv");
+require("dotenv").config();
 
-// dotenv.config();
+
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(bodyparser.urlencoded({ extended: true }));
