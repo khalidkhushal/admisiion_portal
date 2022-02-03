@@ -4,9 +4,20 @@
     </div>
 
 
-    <form class="row g-3 needs-validation" action="/application_form" method="POST" id="application_form" novalidate>
+
+    <form class="row g-3 needs-validation" action="/application_form" method="POST" id="application_form" enctype="multipart/form-data" novalidate>
         <div class="heading_form">
             <h4>Personal Info</h4>
+        </div>
+
+        <div class="">
+            <h5>Profile Picture</h5>
+            <span>Add a profile picture with blue/white background. <br><br></span>
+            <label for="profile_pic" class="form-label"><b >Upload Image:  </b> </label>
+            <input type="file" id="profile_pic" name="profile_pic" value="" required>
+            <div class="invalid-feedback">
+                Add a profile pic.
+            </div>
         </div>
 
         <div class="col-md-4">
@@ -248,9 +259,13 @@
                 </div>
             </div>
         </div>
-        <div class="col-12">
-            <button class="btn btn-primary" type="submit">Submit</button>
+        <div class="col-1">
+            <button class="btn btn-success" type="submit">Submit</button>
         </div>
+        <div class="col-1">
+            <button class="btn btn-primary" onclick="">Preview</button>
+        </div>
+
     </form>
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields

@@ -1,8 +1,11 @@
 const mongoose = require('mongoose');
-const { isEmail } = require('validator')
-
 
 const schema = new mongoose.Schema({
+
+    profile_pic: {
+        data: Buffer,
+        contentType: String
+    },
     First_name: String,
     Last_name: String,
     father_name: String,

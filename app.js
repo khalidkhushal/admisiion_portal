@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use("/", router);
 
+app.use("/uploads", express.static(path.resolve(__dirname, "assets/uploads")))
 app.use("/images", express.static(path.resolve(__dirname, "assets/images")));
 app.use("/js", express.static(path.resolve(__dirname, "assets/js")));
 app.use("/css", express.static(path.resolve(__dirname, "assets/css")));
