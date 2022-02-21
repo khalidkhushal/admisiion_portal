@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const multer = require('multer');
-const applicants = require("../model/schema");
+const applicants = require(".. / model / schema ");
 const fs = require('fs');
 const path = require('path');
 
